@@ -1,0 +1,12 @@
+{
+  "name": "alset-reactconsolesimulation",
+  "version": "1.0.0",
+  "description": "Simulationg alset games trough command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
