@@ -3,5 +3,6 @@
 	"height": 2000,
 	"minGems": 20,
 	"maxGems": 30,
-	"time": 90
+	"time": 90, 
+	"gatherToWin":10
 }

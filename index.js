@@ -17,13 +17,18 @@ async function simulate(game, config, player1, player2){
 			gameFunc = require('./games/squad/');
 			break;
 		default:
-			gameFunc = require('./games/gemCollector/');
+			gameFunc = null; //require('./games/gemCollector/');
             break;
     }
     configFile =  require('./'+config);
     bot1 =  require('./'+player1);
     bot2 =  require('./'+player2);
-    return await gameFunc(configFile, bot1, bot2);
+    if(gameFunc){
+        return await gameFunc(configFile, bot1, bot2);
+    } else {
+        return "Bad game ->"+game
+    }
+    
 }
 //simulate("gemCollector","config.json","bot1.js","bot2.js");
 module.exports = simulate;
